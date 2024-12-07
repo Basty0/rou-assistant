@@ -22,7 +22,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/icon512_maskable.png" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+          name="description"
+          content="Rou Assistant Votre assistant IA personnel, prêt à vous aider dans vos tâches quotidiennes"
+        />
+      </head>
       <body className="bg-gradient-to-b from-blue-50 to-purple-50 dark:from-neutral-950 dark:to-blue-950">
         <ThemeProvider
           attribute="class"
